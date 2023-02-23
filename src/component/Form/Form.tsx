@@ -162,14 +162,14 @@ const Form: React.FC = () => {
       .post('https://localhost:60001/Contractor/Save', {
         name,
         surname,
-        registerAfter, //popraw
+        registerAfter,
         nip,
         pesel,
         image,
       })
       .then(({data, status}) => {
         if (status !== 200) {
-          Alert.alert('Błąd', 'Błąd podczas dodawania formularza');
+          Alert.alert('Błąd', 'Nie znaleziono metody zapisu');
           return;
         }
 
@@ -222,7 +222,7 @@ const Form: React.FC = () => {
       />
 
       <Select
-        label="Type"
+        label="Typ"
         data={TableRegisterAfter}
         handleRegisterAfter={handleRegisterAfter}
         registerAfter={registerAfter}

@@ -3,7 +3,7 @@ import {SafeAreaView} from 'react-native';
 
 import AddContrahent from './src/view/AddContrahent';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <SafeAreaView>
       <AddContrahent />

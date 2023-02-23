@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {ScrollView} from 'react-native';
 
 import Header from '../component/Header/Header';
 import Form from '../component/Form/Form';

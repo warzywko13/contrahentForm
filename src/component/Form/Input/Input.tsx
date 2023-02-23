@@ -27,7 +27,7 @@ const Input: React.FC<InputInterface> = ({
         placeholder={placeholder}
         onChangeText={text => props(text)}
         value={name}></TextInput>
-      {error.length > 0 && <Error name={error} />}
+      {error.length > 0 && <Error error={error} />}
     </View>
   );
 };

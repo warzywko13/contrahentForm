@@ -1,7 +1,8 @@
-export interface InputInterface {
+import {ErrorInterface} from './Error';
+
+export interface InputInterface extends ErrorInterface {
   label: string;
   placeholder: string;
   name: string;
-  error: string;
   props: React.Dispatch<React.SetStateAction<string>>;
 }

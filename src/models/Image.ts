@@ -1,3 +1,5 @@
+import {ErrorInterface} from './Error';
+
 export interface ImageInterface {
   base64: string | undefined;
   type: string | undefined;
@@ -6,7 +8,7 @@ export interface ImageInterface {
   height: number | undefined;
 }
 
-export interface GetImgInterface {
+export interface GetImgInterface extends ErrorInterface {
   label: string;
   name: string;
   image: {
@@ -25,5 +27,4 @@ export interface GetImgInterface {
       height: number | undefined;
     }>
   >;
-  error: string;
 }

@@ -7,10 +7,10 @@ import {ErrorInterface} from '../../models/Error';
 /* Style */
 import ErrorStyle from './ErrorStyle';
 
-const Error: React.FC<ErrorInterface> = ({name}) => {
+const Error: React.FC<ErrorInterface> = ({error}) => {
   const {textError} = ErrorStyle;
 
-  return <Text style={textError}>{name}</Text>;
+  return <Text style={textError}>{error}</Text>;
 };
 
 export default Error;

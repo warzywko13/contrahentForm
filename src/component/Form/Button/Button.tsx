@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, Pressable, View} from 'react-native';
 
 /* Constant */
-import {ButtonStandard, ButtonSubmit} from '../../../const/Settings';
+import {ButtonStandard} from '../../../const/Settings';
 
 /* Models */
 import {ButtonInterface} from '../../../models/Button';

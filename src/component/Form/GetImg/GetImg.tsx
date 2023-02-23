@@ -65,7 +65,7 @@ const GetImg: React.FC<GetImgInterface> = ({
       <Text style={formItemText}>{label}</Text>
       <Button name={name} props={selectPic} />
       <View style={formImageContainer}>{ImageComponent}</View>
-      {error.length > 0 && <Error name={error} />}
+      {error.length > 0 && <Error error={error} />}
     </View>
   );
 };
