@@ -10,7 +10,7 @@ import Select from './Select/Select';
 import GetImg from './GetImg/GetImg';
 
 /* Models */
-import {imageInterface} from '../../models/Image';
+import {ImageInterface} from '../../models/Image';
 
 /* Constant */
 import {
@@ -31,7 +31,7 @@ const Form: React.FC = () => {
   const [registerAfter, setRegisterAfter] = useState(0);
   const [nip, setNip] = useState('');
   const [pesel, setPesel] = useState('');
-  const [image, setImage] = useState<imageInterface>({
+  const [image, setImage] = useState<ImageInterface>({
     base64: '',
     type: '',
     fileName: '',

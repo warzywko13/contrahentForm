@@ -1,4 +1,4 @@
-export interface imageInterface {
+export interface ImageInterface {
   base64: string | undefined;
   type: string | undefined;
   fileName: string | undefined;

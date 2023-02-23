@@ -1,5 +1,8 @@
 import {StyleSheet} from 'react-native';
 
+/* Const */
+import {PrimaryColor, SecondaryColor} from '../../../const/Settings';
+
 const ButtonStyle = StyleSheet.create({
   buttonContainer: {
     display: 'flex',
@@ -13,13 +16,13 @@ const ButtonStyle = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: 12,
     borderRadius: 4,
-    backgroundColor: '#9F2B68',
+    backgroundColor: PrimaryColor,
     width: '50%',
     marginTop: 10,
   },
 
   buttonText: {
-    color: 'white',
+    color: SecondaryColor,
     fontWeight: '500',
   },
 
@@ -28,13 +31,13 @@ const ButtonStyle = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: 15,
     borderRadius: 20,
-    backgroundColor: '#9F2B68',
+    backgroundColor: PrimaryColor,
     marginTop: 20,
     width: '80%',
   },
 
   submitText: {
-    color: 'white',
+    color: SecondaryColor,
     fontWeight: '500',
     fontSize: 18,
   },

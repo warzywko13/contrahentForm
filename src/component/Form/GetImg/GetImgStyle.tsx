@@ -1,5 +1,8 @@
 import {StyleSheet} from 'react-native';
 
+/* Const */
+import {PrimaryColor, SecondaryColor} from '../../../const/Settings';
+
 const GetImgStyle = StyleSheet.create({
   formItem: {
     marginTop: 10,
@@ -23,14 +26,14 @@ const GetImgStyle = StyleSheet.create({
     paddingHorizontal: 32,
     borderRadius: 4,
     elevation: 3,
-    backgroundColor: '#9F2B68',
+    backgroundColor: PrimaryColor,
     marginLeft: 10,
     marginTop: 5,
     marginRight: 10,
   },
 
   formAddImgText: {
-    color: 'white',
+    color: SecondaryColor,
     fontWeight: '500',
   },
 
